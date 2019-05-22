@@ -17,9 +17,14 @@ public class Demo {
 		//Invoke .exe file first
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ldelgado\\Documents\\chromedriver.exe");
+		
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.google.com/");
-		System.out.println(driver.getTitle());
+		
+		driver.get("https://www.google.com/");//hit url 
+		System.out.println(driver.getTitle());//if the title is correct
+		
+		System.out.println(driver.getCurrentUrl());//if i am landed on correct url
+		
 		
 		
 	}
