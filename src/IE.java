@@ -25,6 +25,8 @@ public class IE {
 		System.out.println(driver.getTitle());
 		
 		
+		
+		
 	}
 
 }
