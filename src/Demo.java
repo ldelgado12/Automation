@@ -35,6 +35,12 @@ public class Demo {
 		driver.findElement(By.id("email")).sendKeys("ldelgado@outlook.com");
 		driver.findElement(By.name("pass")).sendKeys("12345");
 		
+		driver.findElement(By.linkText("Forgot account?")).click();
+		
+		
+		
+		
+		
 		
 		//driver.close();
 		
