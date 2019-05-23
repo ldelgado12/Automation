@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -20,11 +21,22 @@ public class Demo {
 		
 		WebDriver driver=new ChromeDriver();
 		
-		driver.get("https://www.google.com/");//hit url 
+		driver.get("https://www.facebook.com/");//hit url 
 		System.out.println(driver.getTitle());//if the title is correct
 		
 		System.out.println(driver.getCurrentUrl());//if i am landed on correct url
 		
+		//System.out.println(driver.getPageSource());//print the page source on console
+		
+		//driver.get("http://yahoo.com");
+		//driver.navigate().back();//goes back on the browser
+		//driver.navigate().forward();// go forward again
+		
+		driver.findElement(By.id("email")).sendKeys("ldelgado@outlook.com");
+		driver.findElement(By.name("pass")).sendKeys("12345");
+		
+		
+		//driver.close();
 		
 		
 	}
