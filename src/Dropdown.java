@@ -31,6 +31,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\ldelgado\\Documents\\c
 		
 		driver.findElement(By.id("btnclosepaxoption")).click();
 		
+		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 		
 		
 		//can only be used if the select is present
